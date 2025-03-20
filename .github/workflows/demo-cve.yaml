@@ -14,7 +14,7 @@ jobs:
       - name: ls
         run: ls -laR
       - name: changed-files
-        uses: tj-actions/changed-files@45.0.7
+        uses: tj-actions/changed-files@46.0.1
       - name: List all changed files
         env:
           ALL_CHANGED_FILES: ${{ steps.changed-files.outputs.all_changed_files }}
