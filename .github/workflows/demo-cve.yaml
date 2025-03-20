@@ -1,0 +1,16 @@
+---
+name: demo-cve
+
+on:
+  workflow_dispatch:
+
+jobs:
+  demo-cve:
+    #runs-on: ubuntu-latest
+    runs-on: ubuntu--20.04
+    steps:
+      - name: checkout
+        uses: actions/checkout@v4
+      - name: ls
+        run: ls -l
+      
